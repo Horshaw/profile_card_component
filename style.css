@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100%,100%;
+    background-position: -150px -150px, 150px 430px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    width: 80%;
+    min-width: 240px;
+    max-width: 608px;
+    border-radius: 20px;
+}
+
+.top{
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -53px;
+}
+
+.photo{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.lieu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+h1{
+    margin: 0 20px 0 0;
+}
+
+hr{
+    margin: 0;
+    border-width: 0;
+    padding: 0;
+    height: 1px;
+    background-color: hsl(0, 0%, 59%);
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+p.important{
+    margin-bottom: 0;
+}
+
+.important{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.baseline, .location{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.age{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+
+@media screen and (min-width: 760px){
+    body{
+        background-position: -920px -920px, 720px 300px;
+    }
+}
